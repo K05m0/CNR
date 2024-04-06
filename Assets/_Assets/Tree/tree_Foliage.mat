@@ -143,7 +143,7 @@ Material:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0.1473699, g: 0.6981132, b: 0.07508005, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-    - _Spring: {r: 0, g: 0, b: 0, a: 0}
+    - _Spring: {r: 1, g: 0, b: 0.8756151, a: 0}
     - _TopColor: {r: 0, g: 0, b: 0, a: 0}
     - _WindMovement: {r: 1, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
