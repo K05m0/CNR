@@ -91,6 +91,26 @@ MonoBehaviour:
   - {fileID: 3320353502036427762}
   m_renderMode: 1
   m_depthSubmissionMode: 0
+--- !u!114 &-1878507001086787259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3aced3429e5911458f4da2dac9d0f29, type: 3}
+  m_Name: MetaHandTrackingAim Standalone
+  m_EditorClassIdentifier: 
+  m_enabled: 0
+  nameUi: 
+  version: 
+  featureIdInternal: 
+  openxrExtensionStrings: 
+  company: 
+  priority: 0
+  required: 0
 --- !u!114 &-1763030503324357024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -246,6 +266,26 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+--- !u!114 &5427932395064553374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e314dfef9af0904e80129bcc0a79361, type: 3}
+  m_Name: HandTracking Standalone
+  m_EditorClassIdentifier: 
+  m_enabled: 0
+  nameUi: 
+  version: 
+  featureIdInternal: 
+  openxrExtensionStrings: 
+  company: 
+  priority: 0
+  required: 0
 --- !u!114 &5694298403334147754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -334,7 +374,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: feeef8d85de8db242bdda70cc7ff5acd, type: 3}
   m_Name: OculusTouchControllerProfile Standalone
   m_EditorClassIdentifier: 
-  m_enabled: 0
+  m_enabled: 1
   nameUi: Oculus Touch Controller Profile
   version: 0.0.1
   featureIdInternal: com.unity.openxr.feature.input.oculustouch
