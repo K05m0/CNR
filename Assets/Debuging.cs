@@ -26,7 +26,8 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
 
         public void CheckWhatITouch()
         {
-            Debug.Log("Objects currently grabbed for climbing:");
+
+            /*            Debug.Log("Objects currently grabbed for climbing:");
 
             // Użyj refleksji do uzyskania dostępu do prywatnego pola m_GrabbedClimbables
             FieldInfo grabbedClimbablesField = typeof(ClimbProvider).GetField("m_GrabbedClimbables", BindingFlags.NonPublic | BindingFlags.Instance);
@@ -37,10 +38,11 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
                 {
                     foreach (var climbInteractable in grabbedClimbables)
                     {
-                        Debug.Log(climbInteractable.gameObject.name);
+                        Debug.Log("huj");
+                        Debug.Log(climbInteractable.gameObject.tag);
                     }
                 }
-            }
+            }*/
         }
     }
 }
