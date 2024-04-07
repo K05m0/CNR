@@ -9,12 +9,12 @@ using FixedUpdate = UnityEngine.PlayerLoop.FixedUpdate;
 
 namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
 {
-    public class HandStaminaProvider : MonoBehaviour
+    public class HandStaminaProvider : MonoBehaviour, IPoint
     {
         [Header("Hands Stamina Settings")]
         public float staminaMaxValue;
         public float staminaCurrValue;
-        [SerializeField] private float drainingStaminaMultiplayer;
+        public float drainingStaminaMultiplayer;
         [SerializeField] private float regenerateStaminaMultiplayer;
         [SerializeField] private float valueToRegenerateStamina;
 
@@ -30,8 +30,10 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
         private int handShake;
 
         private Vector3 velocity;
-        private Vector3 lastPos; 
-        
+        private Vector3 lastPos;
+
+        public List<AudioClip> allObjectSound { get; set; }
+
         private void Awake()
         {
             staminaCurrValue = staminaMaxValue;
