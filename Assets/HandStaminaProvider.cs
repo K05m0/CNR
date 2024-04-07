@@ -11,6 +11,8 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
 {
     public class HandStaminaProvider : MonoBehaviour
     {
+
+        [SerializeField] private Rigidbody rb;
         [Header("Hands Stamina Settings")]
         public float staminaMaxValue;
         public float staminaCurrValue;
@@ -23,8 +25,11 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
 
         [SerializeField] private InteractionLayerMask baseMask;
 
-        
+        [SerializeField] private float JumpMultiplayer;
+
         public XRDirectInteractor interactor;
+        public DynamicMoveProvider provider;
+        
         public bool isDrainingStamina;
         
         //private Vector3 handShake;
@@ -35,10 +40,13 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
 
         public List<AudioClip> allObjectSound { get; set; }
 
+        public bool CanJump;
+
         private void Awake()
         {
             staminaCurrValue = staminaMaxValue;
             lastPos = transform.position;
+
 
         }
         private void FixedUpdate()
@@ -61,6 +69,14 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
             staminaCurrValue += regenerateStaminaMultiplayer;
             
             staminaCurrValue = Mathf.Clamp(staminaCurrValue, 0, staminaMaxValue);
+            
+        }
+
+        private IEnumerator OnGravity()
+        {
+            StopAllCoroutines();
+            yield return new WaitForSeconds(0.7f);
+            provider.useGravity = false;
         }
         private void CalculateVelocity()
         {
@@ -70,13 +86,16 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
                 lastPos = transform.position;
             }
         }
+
         public void StartDrainingStamina()
         {
             isDrainingStamina = true;
+            CanJump = true;
         }
         public void StomDrainingStamina()
         {
             isDrainingStamina = false;
+            CanJump = false;
         }
     }
 }
