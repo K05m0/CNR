@@ -4,16 +4,7 @@ using UnityEngine;
 
 public class MoreStaminaUsePoint : IPoint
 {
-    private SphereCollider collider;
     public float staminaDrainMultiplayer;
     // Start is called before the first frame update
-    void Start()
-    {
-        collider = GetComponent<SphereCollider>();
-    }
-
-    private void OnDrawGizmos()
-    {
-        Gizmos.DrawWireSphere(transform.position, collider.radius);
-    }
+ 
 }
