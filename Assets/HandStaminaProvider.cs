@@ -40,9 +40,7 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
         }
         private void FixedUpdate()
         {
-            CalculateVelocity();
-            Debug.Log(velocity.magnitude);
-            
+            CalculateVelocity();            
             
             if (staminaCurrValue <= 0)
                 interactor.interactionLayers = nothingMask;
