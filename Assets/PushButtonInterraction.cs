@@ -6,39 +6,20 @@ using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
 public class PushButtonInterraction : MonoBehaviour
 {
     [SerializeField] private DynamicMoveProvider dynamicMoveProvider;
+    [SerializeField] private List<GameObject> elementsToRemove;
 
     private void Awake()
     {
-        dynamicMoveProvider.moveSpeed = 0;
+        dynamicMoveProvider.moveSpeed = 0f;
     }
 
-    public void OnStart()
+    public void PushButton()
     {
-        dynamicMoveProvider.moveSpeed = 3;
-    }
-    /*    [SerializeField] List<GameObject> Ui = new List<GameObject>();
-        [SerializeField] int index = 0;
-        private int objectToChange;
-       public void OnPush()
+        dynamicMoveProvider.moveSpeed = 3f;
+        foreach (var element in elementsToRemove)
         {
-            objectToChange = index;
-            switch (objectToChange)
-            {
-                case 0:
-                    Ui[0].SetActive(true);
-                    Ui[1].SetActive(false);
-                    StartCoroutine(LeaveGame());
-                    break;
-                case 1:
-                    Ui[0].SetActive(false);
-                    Ui[1].SetActive(true);
-                    break;
-            }
+            Destroy(element);
         }
+    }
 
-        IEnumerator LeaveGame()
-        {
-            yield return new WaitForSeconds(4);
-            Application.Quit();
-        }*/
 }
