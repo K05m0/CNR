@@ -13,12 +13,10 @@ public class SliderBarController : MonoBehaviour
     private HandStaminaProvider staminaValue;
 
     public Slider slider;
-
-    private GameObject camera;
+    
     // Start is called before the first frame update
     void Start()
     {
-        camera = GameObject.Find("Main Camera");
         hand = GameObject.Find(find);
         staminaValue = hand.GetComponent<HandStaminaProvider>();
     }
@@ -27,6 +25,5 @@ public class SliderBarController : MonoBehaviour
     void Update()
     {
         slider.value = staminaValue.staminaCurrValue;
-        transform.LookAt(camera.transform);
     }
 }
