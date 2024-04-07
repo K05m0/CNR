@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoreStaminaUsePoint : MonoBehaviour
+public class MoreStaminaUsePoint : IPoint
 {
     private SphereCollider collider;
     public float staminaDrainMultiplayer;

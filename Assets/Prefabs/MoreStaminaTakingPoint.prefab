@@ -237,4 +237,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3395c1c805f3b7b45a72c20719dfa4c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  allObjectSound:
+  - {fileID: 8300000, guid: 36d9cb18f7f4b27449d8011cb234a953, type: 3}
+  - {fileID: 8300000, guid: b0b00177532693149befc20fe183b414, type: 3}
+  - {fileID: 8300000, guid: 0a3d8390d6ee4b04ab7d218e1154066b, type: 3}
+  - {fileID: 8300000, guid: 8174e4ed5dfabe8448eb213ddedbec5e, type: 3}
   staminaDrainMultiplayer: 2

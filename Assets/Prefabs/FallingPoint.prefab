@@ -238,8 +238,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c27a4d23db79c7b4eadf8ada31652c31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToFall: 3
+  allObjectSound:
+  - {fileID: 8300000, guid: 5b6cdc74722266142806f5cc665f5f48, type: 3}
+  timeToFall: 2
+  timeToDestroy: 5
   debug: 0
+  nothingMask:
+    m_Bits: 4
+  baseMask:
+    m_Bits: 2
 --- !u!54 &-280035961098849640
 Rigidbody:
   m_ObjectHideFlags: 0

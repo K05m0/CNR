@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.Audio;
 
-internal interface IPoint
+public abstract class IPoint : MonoBehaviour
 {
-    public List<AudioClip> allObjectSound { get; set; }
+    public List<AudioClip> allObjectSound;
 }

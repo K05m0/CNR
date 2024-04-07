@@ -9,7 +9,7 @@ using FixedUpdate = UnityEngine.PlayerLoop.FixedUpdate;
 
 namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
 {
-    public class HandStaminaProvider : MonoBehaviour, IPoint
+    public class HandStaminaProvider : MonoBehaviour
     {
         [Header("Hands Stamina Settings")]
         public float staminaMaxValue;
@@ -19,8 +19,9 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
         [SerializeField] private float valueToRegenerateStamina;
 
         [Header("LayerMask")]
-        [SerializeField] private InteractionLayerMask baseMask;
         [SerializeField] private InteractionLayerMask nothingMask;
+
+        [SerializeField] private InteractionLayerMask baseMask;
 
         
         public XRDirectInteractor interactor;
@@ -42,10 +43,14 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
         }
         private void FixedUpdate()
         {
-            CalculateVelocity();            
-            
+            CalculateVelocity();
+
             if (staminaCurrValue <= 0)
                 interactor.interactionLayers = nothingMask;
+            else if (staminaCurrValue >= staminaMaxValue)
+                interactor.interactionLayers = baseMask;
+                
+            
             
             if (isDrainingStamina)
                 staminaCurrValue -= Time.deltaTime * drainingStaminaMultiplayer;
@@ -64,12 +69,6 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
                 velocity /= Time.deltaTime;
                 lastPos = transform.position;
             }
-            /*Vector3 currentPosition = transform.position;
-            if (currentPosition != lastPos)
-            {
-                velocity = (currentPosition - lastPos) / deltaTime;
-                lastPos = currentPosition;
-            }*/
         }
         public void StartDrainingStamina()
         {

@@ -237,3 +237,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 733dd166942159742936aadec18ecf56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  allObjectSound:
+  - {fileID: 8300000, guid: eda3662ab75cfc24887909de567959d8, type: 3}
+  - {fileID: 8300000, guid: d696f3e23c52b82468122afdb9b2b983, type: 3}
+  - {fileID: 8300000, guid: 74bca69c72c86e842a14475efc8f82f8, type: 3}
+  - {fileID: 8300000, guid: 4faeccd618003f84398aab985addf848, type: 3}
+  - {fileID: 8300000, guid: 5f68812d4664f6e4894b92a8a3c5ce81, type: 3}
+  - {fileID: 8300000, guid: 73d194b21a2d35a4ea8113cb1bb71cd2, type: 3}
+  - {fileID: 8300000, guid: 10399dbc3556f2047925caa1dcc703c9, type: 3}
