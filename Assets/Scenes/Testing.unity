@@ -2745,7 +2745,7 @@ PrefabInstance:
     - target: {fileID: 3953970343158939986, guid: 2ea572d587ee60f44bd5baa3bc2d6503,
         type: 3}
       propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3953970343158939986, guid: 2ea572d587ee60f44bd5baa3bc2d6503,
         type: 3}
@@ -2779,6 +2779,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3953970343158939986, guid: 2ea572d587ee60f44bd5baa3bc2d6503,
         type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3953970343158939986, guid: 2ea572d587ee60f44bd5baa3bc2d6503,
+        type: 3}
       propertyPath: m_LastHoverExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2046197666}
@@ -2795,6 +2800,11 @@ PrefabInstance:
     - target: {fileID: 3953970343158939986, guid: 2ea572d587ee60f44bd5baa3bc2d6503,
         type: 3}
       propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2046197666}
+    - target: {fileID: 3953970343158939986, guid: 2ea572d587ee60f44bd5baa3bc2d6503,
+        type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 2046197666}
     - target: {fileID: 3953970343158939986, guid: 2ea572d587ee60f44bd5baa3bc2d6503,
@@ -2819,6 +2829,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3953970343158939986, guid: 2ea572d587ee60f44bd5baa3bc2d6503,
         type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3953970343158939986, guid: 2ea572d587ee60f44bd5baa3bc2d6503,
+        type: 3}
       propertyPath: m_LastSelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ChangeToImmidiately
       objectReference: {fileID: 0}
@@ -2826,6 +2841,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ChangeToAttempting
+      objectReference: {fileID: 0}
+    - target: {fileID: 3953970343158939986, guid: 2ea572d587ee60f44bd5baa3bc2d6503,
+        type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: CheckWhatITouch
       objectReference: {fileID: 0}
     - target: {fileID: 3953970343158939986, guid: 2ea572d587ee60f44bd5baa3bc2d6503,
         type: 3}
@@ -2844,6 +2864,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3953970343158939986, guid: 2ea572d587ee60f44bd5baa3bc2d6503,
         type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets.Debuging, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3953970343158939986, guid: 2ea572d587ee60f44bd5baa3bc2d6503,
+        type: 3}
       propertyPath: m_LastHoverExited.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
@@ -2855,6 +2880,11 @@ PrefabInstance:
     - target: {fileID: 3953970343158939986, guid: 2ea572d587ee60f44bd5baa3bc2d6503,
         type: 3}
       propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3953970343158939986, guid: 2ea572d587ee60f44bd5baa3bc2d6503,
+        type: 3}
+      propertyPath: m_FirstHoverEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4066061101308654799, guid: 2ea572d587ee60f44bd5baa3bc2d6503,
