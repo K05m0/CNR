@@ -26,7 +26,7 @@ public class PushButtonInterraction : MonoBehaviour
 
     IEnumerator LeaveGame()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(4);
         Application.Quit();
     }
 }
