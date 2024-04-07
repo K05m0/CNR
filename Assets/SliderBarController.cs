@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,24 +7,18 @@ using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
 
 public class SliderBarController : MonoBehaviour
 {
-    public GameObject hand;
+    private HandStaminaProvider staminaProvider;
+    private Slider slider;
 
-    public string find;
-
-    private HandStaminaProvider staminaValue;
-
-    public Slider slider;
-    
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        hand = GameObject.Find(find);
-        staminaValue = hand.GetComponent<HandStaminaProvider>();
+        staminaProvider = GetComponentInParent<HandStaminaProvider>();
+        slider = GetComponentInChildren<Slider>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        slider.value = staminaValue.staminaCurrValue;
+        slider.value = staminaProvider.staminaCurrValue;
     }
+
 }

@@ -465,7 +465,7 @@ GameObject:
   - component: {fileID: 6536633160035882421}
   - component: {fileID: 3334200243016794510}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: Slider Lefr
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1226,6 +1226,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 028877458d1fccf4cb76ad6197dd2408, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hand: {fileID: 0}
-  find: Left Controller
-  slider: {fileID: 6536633160035882421}

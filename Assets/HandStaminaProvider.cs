@@ -11,39 +11,54 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
 {
     public class HandStaminaProvider : MonoBehaviour
     {
+
+        [SerializeField] private Rigidbody rb;
         [Header("Hands Stamina Settings")]
         public float staminaMaxValue;
         public float staminaCurrValue;
-        [SerializeField] private float drainingStaminaMultiplayer;
+        public float drainingStaminaMultiplayer;
         [SerializeField] private float regenerateStaminaMultiplayer;
         [SerializeField] private float valueToRegenerateStamina;
 
         [Header("LayerMask")]
-        [SerializeField] private InteractionLayerMask baseMask;
         [SerializeField] private InteractionLayerMask nothingMask;
 
-        
+        [SerializeField] private InteractionLayerMask baseMask;
+
+        [SerializeField] private float JumpMultiplayer;
+
         public XRDirectInteractor interactor;
+        public DynamicMoveProvider provider;
+        
         public bool isDrainingStamina;
         
         //private Vector3 handShake;
         private int handShake;
 
         private Vector3 velocity;
-        private Vector3 lastPos; 
-        
+        private Vector3 lastPos;
+
+        public List<AudioClip> allObjectSound { get; set; }
+
+        public bool CanJump;
+
         private void Awake()
         {
             staminaCurrValue = staminaMaxValue;
             lastPos = transform.position;
 
+
         }
         private void FixedUpdate()
         {
-            CalculateVelocity();            
-            
+            CalculateVelocity();
+
             if (staminaCurrValue <= 0)
                 interactor.interactionLayers = nothingMask;
+            else if (staminaCurrValue >= staminaMaxValue)
+                interactor.interactionLayers = baseMask;
+                
+            
             
             if (isDrainingStamina)
                 staminaCurrValue -= Time.deltaTime * drainingStaminaMultiplayer;
@@ -54,6 +69,14 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
             staminaCurrValue += regenerateStaminaMultiplayer;
             
             staminaCurrValue = Mathf.Clamp(staminaCurrValue, 0, staminaMaxValue);
+            
+        }
+
+        private IEnumerator OnGravity()
+        {
+            StopAllCoroutines();
+            yield return new WaitForSeconds(0.7f);
+            provider.useGravity = false;
         }
         private void CalculateVelocity()
         {
@@ -62,20 +85,17 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
                 velocity /= Time.deltaTime;
                 lastPos = transform.position;
             }
-            /*Vector3 currentPosition = transform.position;
-            if (currentPosition != lastPos)
-            {
-                velocity = (currentPosition - lastPos) / deltaTime;
-                lastPos = currentPosition;
-            }*/
         }
+
         public void StartDrainingStamina()
         {
             isDrainingStamina = true;
+            CanJump = true;
         }
         public void StomDrainingStamina()
         {
             isDrainingStamina = false;
+            CanJump = false;
         }
     }
 }
