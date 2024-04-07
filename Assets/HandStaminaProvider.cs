@@ -24,24 +24,17 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
         [SerializeField] private InteractionLayerMask nothingMask;
 
         [SerializeField] private InteractionLayerMask baseMask;
-
-        [SerializeField] private float JumpMultiplayer;
-
+        
         public XRDirectInteractor interactor;
         public DynamicMoveProvider provider;
         
         public bool isDrainingStamina;
-        
-        //private Vector3 handShake;
-        private int handShake;
+
 
         private Vector3 velocity;
         private Vector3 lastPos;
 
         public List<AudioClip> allObjectSound { get; set; }
-
-        public bool CanJump;
-
         private void Awake()
         {
             staminaCurrValue = staminaMaxValue;
@@ -90,12 +83,10 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
         public void StartDrainingStamina()
         {
             isDrainingStamina = true;
-            CanJump = true;
         }
         public void StomDrainingStamina()
         {
             isDrainingStamina = false;
-            CanJump = false;
         }
     }
 }
