@@ -3,7 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.PlayerLoop;
+using FixedUpdate = UnityEngine.PlayerLoop.FixedUpdate;
 
 namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
 {
@@ -21,12 +23,20 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
         
         public XRBaseController handController;
         public XRDirectInteractor interactor;
+
+        public InputAction input;
         
         public bool isDrainingStamina;
 
         public bool canHold = true;
         
         public int layerToManipulate;
+
+        //private Vector3 handShake;
+        private int handShake;
+
+        private Vector3 ballSpeed;
+        private Vector3 lastPos; 
         
         private void FixedUpdate()
         {
@@ -36,6 +46,13 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
                 staminaCurrValue += Time.deltaTime * regenerateStaminaMultiplayer;
 
             staminaCurrValue = Mathf.Clamp(staminaCurrValue, 0, staminaMaxValue);
+            
+            if(lastPos != transform.position) {
+                ballSpeed = transform.position - lastPos;
+                ballSpeed /= Time.deltaTime;
+                lastPos = transform.position;
+            }
+            UnityEngine.Debug.Log(ballSpeed.magnitude);
         }
 
         private void Update()
@@ -47,12 +64,13 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
                 interactor.interactionLayers = nothingMask;
                 StartCoroutine(Cooldown());
             }
-            
         }
 
         private void Awake()
         {
             staminaCurrValue = staminaMaxValue;
+            lastPos = transform.position;
+
         }
 
         public void StartDrainingStamina()

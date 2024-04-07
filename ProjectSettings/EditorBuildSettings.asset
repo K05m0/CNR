@@ -12,6 +12,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Prototype 1.unity
     guid: c4b95b4e8232f134eb54d151bed75909
   m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 0e75fd06855d355449b2c0ecab348131,
+      type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 46eb376bbfaada145aa8439989d70b9e,
       type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 74335bb9d6bb57244b9549b9f8762d59,
