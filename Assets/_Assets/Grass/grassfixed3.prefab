@@ -66,7 +66,12 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: feb95f41cd6cf38468fb51e0787423bb,
         type: 3}
       propertyPath: m_Name
-      value: grassfixed
+      value: grassfixed3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: feb95f41cd6cf38468fb51e0787423bb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
