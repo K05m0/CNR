@@ -18,7 +18,6 @@ public class HandController : MonoBehaviour
     private void Awake()
     {
         HandStaminaProvider = GetComponent<HandStaminaProvider>();
-        HandAudioSource = GetComponent<AudioSource>();
     }
 
     public void OnTriggerEnter(Collider other)

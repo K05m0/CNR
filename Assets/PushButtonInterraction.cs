@@ -10,12 +10,12 @@ public class PushButtonInterraction : MonoBehaviour
 
     private void Awake()
     {
-        dynamicMoveProvider.moveSpeed = 0f;
+        dynamicMoveProvider.moveSpeed = 7f;
     }
 
     public void PushButton()
     {
-        dynamicMoveProvider.moveSpeed = 3f;
+        dynamicMoveProvider.moveSpeed = 7f;
         foreach (var element in elementsToRemove)
         {
             Destroy(element);
