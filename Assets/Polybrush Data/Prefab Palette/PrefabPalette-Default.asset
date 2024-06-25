@@ -81,3 +81,105 @@ MonoBehaviour:
       m_YScaleBool: 0
       m_ZScaleBool: 0
     name: Pebble
+  - gameObject: {fileID: 919132149155446097, guid: 112e94286bee64441ba93308a53c0ad4,
+      type: 3}
+    settings:
+      m_Strength: 100
+      m_RotationRangeMin: {x: 270, y: 0, z: 0}
+      m_RotationRangeMax: {x: 270, y: 0, z: 0}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 1
+      m_XRotationBool: 1
+      m_YRotationBool: 0
+      m_ZRotationBool: 0
+      m_XScaleBool: 0
+      m_YScaleBool: 0
+      m_ZScaleBool: 0
+    name: road_01
+  - gameObject: {fileID: 919132149155446097, guid: c6e6014c6409ceb49ae2e72d8bedfc41,
+      type: 3}
+    settings:
+      m_Strength: 100
+      m_RotationRangeMin: {x: 270, y: 0, z: 0}
+      m_RotationRangeMax: {x: 270, y: 0, z: 0}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 1
+      m_XRotationBool: 1
+      m_YRotationBool: 0
+      m_ZRotationBool: 0
+      m_XScaleBool: 0
+      m_YScaleBool: 0
+      m_ZScaleBool: 0
+    name: road_02
+  - gameObject: {fileID: 919132149155446097, guid: c330cf22acac1a940b858c45325f9a95,
+      type: 3}
+    settings:
+      m_Strength: 100
+      m_RotationRangeMin: {x: 270, y: 0, z: 0}
+      m_RotationRangeMax: {x: 270, y: 0, z: 0}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 1
+      m_XRotationBool: 1
+      m_YRotationBool: 0
+      m_ZRotationBool: 0
+      m_XScaleBool: 0
+      m_YScaleBool: 0
+      m_ZScaleBool: 0
+    name: road_03
+  - gameObject: {fileID: 919132149155446097, guid: 3f40c86eb9943bb47924b649c989afc7,
+      type: 3}
+    settings:
+      m_Strength: 100
+      m_RotationRangeMin: {x: 270, y: 0, z: 0}
+      m_RotationRangeMax: {x: 270, y: 0, z: 0}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 1
+      m_XRotationBool: 1
+      m_YRotationBool: 0
+      m_ZRotationBool: 0
+      m_XScaleBool: 0
+      m_YScaleBool: 0
+      m_ZScaleBool: 0
+    name: road_04
+  - gameObject: {fileID: 919132149155446097, guid: 7e7a8a63564228844a6a7bdc7ef8713b,
+      type: 3}
+    settings:
+      m_Strength: 100
+      m_RotationRangeMin: {x: 270, y: 90, z: 0}
+      m_RotationRangeMax: {x: 270, y: 90, z: 0}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 1
+      m_XRotationBool: 1
+      m_YRotationBool: 0
+      m_ZRotationBool: 0
+      m_XScaleBool: 0
+      m_YScaleBool: 0
+      m_ZScaleBool: 0
+    name: road_05
+  - gameObject: {fileID: 919132149155446097, guid: f28c627505198014490bdadad42b9aff,
+      type: 3}
+    settings:
+      m_Strength: 100
+      m_RotationRangeMin: {x: 270, y: 0, z: 0}
+      m_RotationRangeMax: {x: 270, y: 0, z: 0}
+      m_ScaleRangeMin: {x: 1, y: 1, z: 1}
+      m_ScaleRangeMax: {x: 1, y: 1, z: 1}
+      m_UniformScale: {x: 1, y: 1}
+      m_UniformBool: 1
+      m_XRotationBool: 1
+      m_YRotationBool: 0
+      m_ZRotationBool: 0
+      m_XScaleBool: 0
+      m_YScaleBool: 0
+      m_ZScaleBool: 0
+    name: road_06
